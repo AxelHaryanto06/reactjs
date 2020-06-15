@@ -1,5 +1,6 @@
 import React from 'react'
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron, Button, Container, Row, Col } from 'reactstrap';
+import CardComp from './CardComp';
 function AboutComp() {
     return (
         <div>
@@ -13,6 +14,13 @@ function AboutComp() {
                         <Button color="primary">Learn More</Button>
                     </p>
                 </Jumbotron>
+                <Container>
+                    <Row>
+                        <Col><CardComp id="1" judul="Belajar React" tanggal="15/06/2020"/></Col>
+                        <Col><CardComp id="2" judul="Belajar Golang" tanggal="16/06/2020"/></Col>                    
+                        <Col><CardComp id="3" judul="Belajar React Native" tanggal="17/06/2020"/></Col>
+                    </Row>
+                </Container>
             </div>
         </div>
     )

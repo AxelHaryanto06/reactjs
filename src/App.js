@@ -9,6 +9,7 @@ import NavbarComp from './Component/Fungsional/NavbarComp';
 import HomePage from './Component/Fungsional/HomePage';
 import DetailComp from './Component/Fungsional/DetailComp';
 import ListComp from './Component/Class/ListComp';
+import TambahComp from './Component/Class/TambahComp';
 //import './App.css';
 
 //import Beranda from './Component/Class/Beranda';
@@ -21,7 +22,8 @@ const App = () => {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/about" component={About} />
         <Route exact path="/mahasiswa" component={ListComp} />
-        
+        <Route exact path="/mahasiswa/tambah" component={TambahComp} />
+
         {/* <Route exact path="/detail/:id" component={DetailComp} /> */}
       </Switch>
     </BrowserRouter>
